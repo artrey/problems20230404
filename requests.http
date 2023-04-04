@@ -1,0 +1,32 @@
+GET http://localhost:8000/api/notes/
+
+###
+
+GET http://localhost:8000/api/notes/fav/
+
+###
+
+POST http://localhost:8000/api/notes/
+Content-Type: application/json
+Authorization: Token ...
+
+{
+  "text": "from api",
+  "tags": [1]
+}
+
+###
+
+GET http://localhost:8000/api/notes/2/
+
+###
+
+PUT http://localhost:8000/api/notes/2/
+
+###
+
+PATCH http://localhost:8000/api/notes/2/
+
+###
+
+DELETE http://localhost:8000/api/notes/2/
